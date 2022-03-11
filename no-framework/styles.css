@@ -147,7 +147,7 @@ p {
     padding: 5%;
   }
   .left {
-    height: 100vh;
+    height: 100%;
     align-items: center;
     width: auto;
     justify-content: center;
