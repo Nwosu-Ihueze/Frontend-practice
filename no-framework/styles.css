@@ -1,0 +1,217 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0ffff;
+  height: 100vh;
+}
+
+header {
+  overflow: hidden;
+  background-color: transparent;
+  padding: 20px 70px;
+}
+
+header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  color: black;
+  cursor: pointer;
+}
+
+header a.active {
+  background-color: #191970;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+.nav-icon {
+  display: none;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  padding-left: 5%;
+	height: 100vh;
+	overflow: hidden;
+	width: 60%;
+  
+}
+.pill {
+  background-color: #191970;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 20px;
+}
+.pill a {
+  color: #fff;
+}
+h2{
+  font-size: 36px;
+}
+.subscribe{
+  display: block;
+  padding-bottom: 15%;
+}
+.subscribe p{
+  padding: 10px;
+}
+.subscribe p:first-child {
+  width: 65%;
+  float: left;
+}
+.subscribe p:nth-child(2) {
+  width: 35%;
+  float: left;
+}
+.subscribe input[type="text"] {
+  margin: 0;
+  color: #999;
+  padding: 15px !important;
+  text-align: left;
+  width: 100% !important;
+  outline: none;
+  border: 0;
+  font-size: 14px;
+  background-color: #fff;
+  border-radius: 12px;
+}
+.subscribe input[type="submit"] {
+  
+  background-color: #191970;
+  color: #fff;
+  padding: 16px !important;
+  text-align: center;
+  width: 100%;
+  outline: none;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+.icons {
+  padding-top: 5%;
+}
+.icons ul{
+  display: flex;
+  list-style-type: none;
+  padding: 0%;
+  gap: 15px;
+}
+.right {
+	height: 100vh;
+	overflow: hidden;
+	width: 33.33%;
+
+}
+.right img {
+  width: 25vw;
+}
+p {
+	font: #000;
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .header-right {
+    display: none;
+  }
+  .nav-icon {
+    float: right;
+    display: block;
+  }
+  .container {
+    display: block;
+    padding: 5%;
+  }
+  .left {
+    height: 100vh;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .pill {
+    padding: 10px 10px;
+  }
+  .subscribe{
+    padding-bottom: 5%;
+  }
+  .icons p {
+    text-align: left;
+  }
+  .right {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  header {
+    padding: 20px 0px;
+  }
+  .header-items {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-items a {
+    float: left;
+  }
+  .header-right {
+    display: none;
+  }
+  .nav-icon{
+    display: block;
+  }
+  .container {
+    display: block;
+    padding: 5%;
+  }
+  .right {
+    display: none;
+  }
+  .left {
+    height: 100%;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+    text-align: center;
+  }
+  .subscribe p:first-child, .subscribe p:nth-child(2) {
+    width: auto;
+    float: none;
+  }
+  .subscribe{
+    padding-bottom: 0%;
+  }
+  .icons p {
+    text-align: left;
+  }
+  .icons ul {
+    gap: 20%;
+  }
+  .icons li {
+    width: 2px;
+    height: 2px;
+  }
+}
